@@ -8,15 +8,6 @@ const organizers = [{
         img: 'imgs/curcio_andres.jpeg',
     },
     {
-        fullName: 'Ignacio Esmite',
-        job: 'Software Engineer',
-        city: 'Buenos Aires',
-        country: 'Argentina',
-        twitter: 'https://twitter.com/nachoesmite',
-        linkedin: 'https://ar.linkedin.com/in/iesmite/es',
-        img: 'imgs/esmite_ignacio.jpeg',
-    },
-    {
         fullName: 'Damián Meydac',
         job: 'Software Tester',
         city: 'Buenos Aires',
@@ -24,6 +15,15 @@ const organizers = [{
         twitter: 'https://twitter.com/damimj',
         linkedin: 'https://www.linkedin.com/in/damianmeydacjean/es',
         img: 'imgs/meydac_damian.jpeg',
+    },
+    {
+        fullName: 'Ignacio Esmite',
+        job: 'Software Engineer',
+        city: 'Buenos Aires',
+        country: 'Argentina',
+        twitter: 'https://twitter.com/nachoesmite',
+        linkedin: 'https://ar.linkedin.com/in/iesmite/es',
+        img: 'imgs/esmite_ignacio.jpeg',
     },
     {
         fullName: 'Nicolás Arkhipenko',
@@ -51,7 +51,7 @@ const organizadores = `
     <h2 class="section-heading">EL EQUIPO</h2>
     ${organizers.map(i => `
      <div class="col-sm-3">
-        <div class="team-member text-center">   
+        <div class="team-member text-center">
             <img class="img-responsive img-circle" src=${i.img}>
               <h4>${i.fullName}</h4>
               <p id="position" class="text-muted">${i.job}</p>
@@ -89,7 +89,7 @@ const redes = `
                 <h4 class="service-heading"><a target="_blank" href=${i.slack}>Registrate en nuestro Slack</a></h4>
         </div><!--cierro "col-md-6"-->
     </div><!--cierro "row"-->
-    `).join('')}`;   
+    `).join('')}`;
 
 $("#equipo_datos").append(organizadores);//inserto el contenido de organizadores en el html por jQuery
 $("#social_datos").append(redes);//inserto el contenido de redes sociales en el html por jQuery
